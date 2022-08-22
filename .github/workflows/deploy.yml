@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-
 name: Build and Deploy
 jobs:
   build:
@@ -30,8 +29,8 @@ jobs:
         file_name: .env
         fail_on_empty: true
 
-    name: Build
-    run: docker-compose build
+      name: Build
+      run: docker-compose build
 
-    name: Run
-    run: docker-compose down && docker-compose up -d
+      name: Run
+      run: docker-compose down && docker-compose up -d
