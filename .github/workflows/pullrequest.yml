@@ -16,6 +16,6 @@ jobs:
           directory: back-end/
           file_name: .env.test
       - name: Run tests
-        run: ./back-end/docker-compose-test.yml run node_app npm run test
+        run: docker-compose -f ./back-end/docker-compose-test.yml run node_app npm run test
       - name: Build
-        run: cd back-end && npm i && npm run build
+        run: cd back_end && npm i && npm run build
