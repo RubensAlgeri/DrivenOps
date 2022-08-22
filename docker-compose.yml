@@ -17,7 +17,7 @@ services:
     depends_on:
       - db
     env_file:
-      - .env.test
+      - ./back-end/.env
 
   app_react:
     build: ./front-end
