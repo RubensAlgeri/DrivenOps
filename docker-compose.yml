@@ -39,4 +39,4 @@ services:
 
 volumes:
   build_react:
-    pg:
+  pg:
